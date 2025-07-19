@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Service Icon 1 - Web Development</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0A0A1E" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00FFFF" stop-opacity="0.7" offset="0%"></stop>
+            <stop stop-color="#FF00FF" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Service-Icon-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="url(#linearGradient-1)" cx="100" cy="100" r="100"></circle>
+        
+        <!-- Web Development Icon -->
+        <g id="Web-Dev-Icon" transform="translate(40, 40)">
+            <!-- Browser Window -->
+            <rect x="0" y="0" width="120" height="90" rx="5" stroke="#00FFFF" stroke-width="2" opacity="0.9"></rect>
+            
+            <!-- Browser Header -->
+            <rect x="0" y="0" width="120" height="20" rx="5" stroke="#00FFFF" stroke-width="2" fill="#000000" opacity="0.8"></rect>
+            
+            <!-- Browser Controls -->
+            <circle cx="10" cy="10" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="20" cy="10" r="3" fill="#00FF00" opacity="0.9"></circle>
+            <circle cx="30" cy="10" r="3" fill="#00FFFF" opacity="0.9"></circle>
+            
+            <!-- URL Bar -->
+            <rect x="40" y="5" width="70" height="10" rx="2" stroke="#00FFFF" stroke-width="1" opacity="0.7"></rect>
+            
+            <!-- Code Elements -->
+            <g id="Code-Elements" transform="translate(10, 30)" opacity="0.9">
+                <path d="M0,0 L20,15 L0,30" stroke="#FF00FF" stroke-width="2" fill="none"></path>
+                <path d="M40,0 L20,15 L40,30" stroke="#FF00FF" stroke-width="2" fill="none"></path>
+                <line x1="50" y1="0" x2="50" y2="30" stroke="#00FFFF" stroke-width="2"></line>
+                <line x1="60" y1="0" x2="60" y2="30" stroke="#00FFFF" stroke-width="2"></line>
+                <line x1="50" y1="15" x2="100" y2="15" stroke="#00FFFF" stroke-width="2"></line>
+            </g>
+            
+            <!-- Circuit Elements -->
+            <path d="M0,90 L0,110 L60,110 L60,120 L120,120" stroke="#FF00FF" stroke-width="2" opacity="0.7"></path>
+            <path d="M120,90 L120,110 L80,110 L80,120 L0,120" stroke="#FF00FF" stroke-width="2" opacity="0.7"></path>
+            
+            <!-- Nodes -->
+            <circle cx="0" cy="110" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="60" cy="110" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="60" cy="120" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="120" cy="120" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="120" cy="110" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="80" cy="110" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="80" cy="120" r="3" fill="#FF00FF" opacity="0.9"></circle>
+            <circle cx="0" cy="120" r="3" fill="#FF00FF" opacity="0.9"></circle>
+        </g>
+        
+        <!-- Glow Effect -->
+        <circle cx="100" cy="100" r="70" fill="url(#linearGradient-2)" opacity="0.2" filter="blur(10px)"></circle>
+    </g>
+</svg>

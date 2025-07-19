@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Project Thumbnail 2</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0A0A1E" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00FF00" stop-opacity="0.7" offset="0%"></stop>
+            <stop stop-color="#00FFFF" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Project-Thumbnail-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="url(#linearGradient-1)" x="0" y="0" width="300" height="300"></rect>
+        
+        <!-- Cyberpunk City Skyline -->
+        <g id="City-Skyline" transform="translate(20, 50)">
+            <!-- Buildings -->
+            <rect x="0" y="100" width="20" height="100" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            <rect x="25" y="70" width="30" height="130" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            <rect x="60" y="120" width="25" height="80" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            <rect x="90" y="50" width="40" height="150" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            <rect x="135" y="90" width="20" height="110" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            <rect x="160" y="30" width="35" height="170" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            <rect x="200" y="80" width="30" height="120" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            <rect x="235" y="110" width="25" height="90" fill="#0A0A1E" stroke="#00FFFF" stroke-width="1" opacity="0.9"></rect>
+            
+            <!-- Windows -->
+            <g id="Windows" opacity="0.8">
+                <!-- Building 1 -->
+                <rect x="5" y="110" width="4" height="4" fill="#00FFFF"></rect>
+                <rect x="12" y="110" width="4" height="4" fill="#00FFFF"></rect>
+                <rect x="5" y="120" width="4" height="4" fill="#00FFFF"></rect>
+                <rect x="12" y="120" width="4" height="4" fill="#FF00FF"></rect>
+                <rect x="5" y="130" width="4" height="4" fill="#00FFFF"></rect>
+                <rect x="12" y="130" width="4" height="4" fill="#00FFFF"></rect>
+                <rect x="5" y="140" width="4" height="4" fill="#FF00FF"></rect>
+                <rect x="12" y="140" width="4" height="4" fill="#00FFFF"></rect>
+                
+                <!-- Building 2 -->
+                <rect x="32" y="80" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="43" y="80" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="32" y="95" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="43" y="95" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="32" y="110" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="43" y="110" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="32" y="125" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="43" y="125" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="32" y="140" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="43" y="140" width="5" height="5" fill="#00FFFF"></rect>
+                
+                <!-- Building 4 -->
+                <rect x="100" y="60" width="6" height="6" fill="#00FFFF"></rect>
+                <rect x="115" y="60" width="6" height="6" fill="#FF00FF"></rect>
+                <rect x="100" y="80" width="6" height="6" fill="#00FFFF"></rect>
+                <rect x="115" y="80" width="6" height="6" fill="#00FFFF"></rect>
+                <rect x="100" y="100" width="6" height="6" fill="#FF00FF"></rect>
+                <rect x="115" y="100" width="6" height="6" fill="#00FFFF"></rect>
+                <rect x="100" y="120" width="6" height="6" fill="#00FFFF"></rect>
+                <rect x="115" y="120" width="6" height="6" fill="#FF00FF"></rect>
+                <rect x="100" y="140" width="6" height="6" fill="#FF00FF"></rect>
+                <rect x="115" y="140" width="6" height="6" fill="#00FFFF"></rect>
+                
+                <!-- Building 6 -->
+                <rect x="170" y="40" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="180" y="40" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="170" y="60" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="180" y="60" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="170" y="80" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="180" y="80" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="170" y="100" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="180" y="100" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="170" y="120" width="5" height="5" fill="#00FFFF"></rect>
+                <rect x="180" y="120" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="170" y="140" width="5" height="5" fill="#FF00FF"></rect>
+                <rect x="180" y="140" width="5" height="5" fill="#00FFFF"></rect>
+            </g>
+            
+            <!-- Neon Signs -->
+            <path d="M40,60 L50,60 L50,65 L40,65 Z" fill="#FF00FF" opacity="0.9"></path>
+            <path d="M105,40 L120,40 L120,45 L105,45 Z" fill="#00FFFF" opacity="0.9"></path>
+            <path d="M165,20 L185,20 L185,25 L165,25 Z" fill="#00FF00" opacity="0.9"></path>
+            <path d="M210,70 L220,70 L220,75 L210,75 Z" fill="#FF00FF" opacity="0.9"></path>
+            
+            <!-- Flying Cars -->
+            <g id="Flying-Cars">
+                <path d="M70,30 L80,30 L85,35 L75,35 Z" fill="#00FFFF" opacity="0.7"></path>
+                <path d="M150,60 L160,60 L165,65 L155,65 Z" fill="#FF00FF" opacity="0.7"></path>
+                <path d="M220,40 L230,40 L235,45 L225,45 Z" fill="#00FF00" opacity="0.7"></path>
+            </g>
+        </g>
+        
+        <!-- Holographic Interface -->
+        <g id="Holographic-Interface" transform="translate(50, 20)">
+            <circle cx="100" cy="20" r="15" stroke="#00FFFF" stroke-width="1" fill="none" opacity="0.7"></circle>
+            <path d="M85,20 L115,20" stroke="#00FFFF" stroke-width="1" opacity="0.7"></path>
+            <path d="M100,5 L100,35" stroke="#00FFFF" stroke-width="1" opacity="0.7"></path>
+            
+            <rect x="70" y="5" width="60" height="2" fill="#00FFFF" opacity="0.5"></rect>
+            <rect x="70" y="33" width="60" height="2" fill="#00FFFF" opacity="0.5"></rect>
+            
+            <text x="130" y="25" font-family="monospace" font-size="10" fill="#00FFFF">SCAN COMPLETE</text>
+        </g>
+        
+        <!-- Rain Effect -->
+        <g id="Rain" opacity="0.5">
+            <line x1="30" y1="0" x2="25" y2="30" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="60" y1="0" x2="55" y2="40" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="90" y1="0" x2="85" y2="35" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="120" y1="0" x2="115" y2="25" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="150" y1="0" x2="145" y2="30" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="180" y1="0" x2="175" y2="40" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="210" y1="0" x2="205" y2="35" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="240" y1="0" x2="235" y2="25" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+            <line x1="270" y1="0" x2="265" y2="30" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"></line>
+        </g>
+        
+        <!-- Glow Effects -->
+        <circle cx="150" cy="150" r="100" fill="url(#linearGradient-2)" opacity="0.2" filter="blur(15px)"></circle>
+    </g>
+</svg>

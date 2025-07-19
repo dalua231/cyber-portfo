@@ -1,0 +1,733 @@
+/* Animations for Cyberpunk Portfolio */
+
+/* Keyframes */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-5px, 5px);
+    }
+    40% {
+        transform: translate(-5px, -5px);
+    }
+    60% {
+        transform: translate(5px, 5px);
+    }
+    80% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes glitchText {
+    0% {
+        opacity: 1;
+        transform: translate(0);
+        text-shadow: var(--shadow-neon-pink);
+    }
+    10% {
+        opacity: 0.8;
+        text-shadow: 2px 2px var(--color-neon-blue);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(-3px, 0);
+        text-shadow: var(--shadow-neon-pink);
+    }
+    30% {
+        opacity: 0.8;
+        text-shadow: 2px -2px var(--color-neon-green);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(3px, 0);
+        text-shadow: var(--shadow-neon-pink);
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: -2px 2px var(--color-neon-blue);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0);
+        text-shadow: var(--shadow-neon-pink);
+    }
+    70% {
+        opacity: 0.8;
+        text-shadow: 2px 2px var(--color-neon-green);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(-3px, 0);
+        text-shadow: var(--shadow-neon-pink);
+    }
+    90% {
+        opacity: 0.8;
+        text-shadow: -2px -2px var(--color-neon-blue);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        text-shadow: var(--shadow-neon-pink);
+    }
+}
+
+@keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: 1;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes scan {
+    0% {
+        background-position: 0 -100vh;
+    }
+    100% {
+        background-position: 0 100vh;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 255, 0);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px) translateX(-50%);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+.glitch {
+    position: relative;
+    color: var(--color-neon-pink);
+    text-shadow: var(--shadow-neon-pink);
+    animation: glitchText 5s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.glitch::before {
+    color: var(--color-neon-blue);
+    z-index: -1;
+    animation: glitch 0.3s infinite;
+    animation-timing-function: steps(1);
+    animation-delay: 0.1s;
+}
+
+.glitch::after {
+    color: var(--color-neon-green);
+    z-index: -2;
+    animation: glitch 0.3s infinite reverse;
+    animation-timing-function: steps(1);
+    animation-delay: 0.2s;
+}
+
+.glitch-subtle {
+    position: relative;
+    color: var(--color-text-primary);
+}
+
+.glitch-subtle::before,
+.glitch-subtle::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.glitch-subtle::before {
+    color: var(--color-neon-blue);
+    z-index: -1;
+    transform: translateX(-2px);
+}
+
+.glitch-subtle::after {
+    color: var(--color-neon-pink);
+    z-index: -2;
+    transform: translateX(2px);
+}
+
+.glitch-text {
+    color: var(--color-neon-blue);
+    text-shadow: var(--shadow-neon-blue);
+    animation: flicker 3s infinite;
+}
+
+.flicker {
+    animation: flicker 3s infinite;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--color-neon-green);
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.slide-up {
+    animation: slideUp 1s ease forwards;
+}
+
+.slide-down {
+    animation: slideDown 1s ease forwards;
+}
+
+.slide-left {
+    animation: slideLeft 1s ease forwards;
+}
+
+.slide-right {
+    animation: slideRight 1s ease forwards;
+}
+
+/* Animation Delays */
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.delay-4 {
+    animation-delay: 0.4s;
+}
+
+.delay-5 {
+    animation-delay: 0.5s;
+}
+
+/* Scroll Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Animations */
+.hover-glitch:hover {
+    animation: glitch 0.3s infinite;
+}
+
+.hover-pulse:hover {
+    animation: pulse 2s infinite;
+}
+
+.hover-float:hover {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Specific Element Animations */
+.skill-level {
+    width: 0;
+    transition: width 1.5s ease;
+}
+
+.skill-level.animate {
+    width: var(--width, 0);
+}
+
+.portfolio-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.portfolio-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.service-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading Animation */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid transparent;
+    border-top-color: var(--color-neon-pink);
+    border-right-color: var(--color-neon-blue);
+    border-bottom-color: var(--color-neon-green);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 3px solid transparent;
+    border-top-color: var(--color-neon-blue);
+    border-radius: 50%;
+    animation: rotate 1s linear infinite reverse;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border: 3px solid transparent;
+    border-top-color: var(--color-neon-green);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+}
+
+/* Cursor Animation */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-neon-blue);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.3s, height 0.3s, border-color 0.3s;
+    mix-blend-mode: difference;
+}
+
+.cursor-dot {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-neon-pink);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10000;
+    transition: background-color 0.3s;
+    mix-blend-mode: difference;
+}
+
+.custom-cursor.hover {
+    width: 50px;
+    height: 50px;
+    border-color: var(--color-neon-pink);
+    background-color: rgba(255, 0, 255, 0.1);
+}
+
+.cursor-dot.hover {
+    background-color: var(--color-neon-blue);
+}
+
+.cursor-trail {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-neon-blue);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+/* Terminal Typing Effect */
+.terminal-typing::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+/* Scroll Indicator Animation */
+.scroll-indicator .mouse {
+    animation: pulse 2s infinite;
+}
+
+.scroll-indicator .arrow-down:nth-child(1) {
+    animation: fadeIn 1s infinite alternate;
+}
+
+.scroll-indicator .arrow-down:nth-child(2) {
+    animation: fadeIn 1s infinite alternate 0.5s;
+}
+
+/* Grid Overlay Animation */
+.grid-overlay {
+    animation: scan 15s linear infinite;
+}
+
+/* Shape Animations */
+.shape-1 {
+    animation: float 4s ease-in-out infinite;
+}
+
+.shape-2 {
+    animation: float 6s ease-in-out infinite 1s;
+}
+
+.shape-3 {
+    animation: float 5s ease-in-out infinite 0.5s;
+}
+
+/* Section Transition Animations */
+.section-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-secondary);
+    z-index: 9998;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.section-transition.active {
+    transform: translateY(0);
+}
+
+.section-transition.exit {
+    transform: translateY(-100%);
+}
+
+/* Page Transition Animations */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-secondary);
+    z-index: 9999;
+    clip-path: circle(0% at center);
+    transition: clip-path 1s ease;
+}
+
+.page-transition.active {
+    clip-path: circle(150% at center);
+}
+
+/* Glitch Image Effect */
+.glitch-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.glitch-image::before,
+.glitch-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+}
+
+.glitch-image::before {
+    left: 2px;
+    background-color: var(--color-neon-blue);
+    opacity: 0.2;
+    animation: glitch 0.3s infinite;
+}
+
+.glitch-image::after {
+    left: -2px;
+    background-color: var(--color-neon-pink);
+    opacity: 0.2;
+    animation: glitch 0.3s infinite reverse;
+}
+
+/* Neon Button Animation */
+.neon-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.neon-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.4), transparent);
+    transition: left 0.7s;
+}
+
+.neon-button:hover::before {
+    left: 100%;
+}
+
+/* Text Scramble Animation */
+.text-scramble {
+    display: inline-block;
+}
+
+/* Particle Animation */
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: var(--color-neon-blue);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+/* Data Stream Animation */
+.data-stream {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.data-line {
+    position: absolute;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--color-neon-green), transparent);
+    animation-name: dataStream;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dataStream {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Circuit Animation */
+.circuit-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawCircuit 3s linear forwards;
+}
+
+@keyframes drawCircuit {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Matrix Rain Animation */
+.matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.matrix-column {
+    position: absolute;
+    top: 0;
+    font-family: var(--font-terminal);
+    font-size: 1.2rem;
+    color: var(--color-neon-green);
+    animation-name: matrixRain;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes matrixRain {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
